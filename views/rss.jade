@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  ul
+    each item in items
+      li.item.panel.panel-default
+        div.panel-heading=item.title
+        div.desc.panel-body
+          #{item.enclosure}
+          #{item.description}
